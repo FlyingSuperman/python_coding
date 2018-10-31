@@ -29,4 +29,4 @@ Controller 2:  PID_controller_with_estimated_values
 
 ## 3.     
 **In coding, for Kalman Filter how to represent the belif?**      
-Kalman Filter: belif is a Gaussian. just use $mu$   
+Kalman Filter: belif is a Gaussian. just use μ
