@@ -1,6 +1,16 @@
 # Course Notes
 ===========================
 ## 1.How to build a simulator for an estimation method?
-    1).**Get the raw data**
-    Based on the measurement Model create a class to generate the noisy measurement from the perfect actual state.
-    
+### 1).Get the raw data
+Generate the noisy measurement from the perfect actual state.
+### 2).Raw data-----> Estimate data
+### 3).A class to describe the dynamics of the machine(robot/drone).
+|Known|What we want|
+|----|-----|
+|Thrust/Angular velocity |Acceleration|
+### 4).Controllers use different kinds of data
+The controllers may be a PID controller or sth similar, but the data they use are different. So We can understand the influence of estimation.           
+Controller 1:  PID_controller_with_measured_values            
+Controller 2:  PID_controller_with_estimated_values
+### 5).Path Generation
+This func produce the series of state. e.g. x=[...], x_dot=[...], x_dot_dot = [...], theta=[...] .......
