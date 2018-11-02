@@ -27,6 +27,25 @@ Controller 2:  PID_controller_with_estimated_values
 **Unscented Kalman Filter(UKF).** Gaussian + Nonlinear-->Don't need the linearization step.        
 **Particle Filter.** Not Gaussian + Nonlinear         
 
-## 3.     
-**In coding, for Kalman Filter how to represent the belif?**      
-Kalman Filter: belif is a Gaussian. just use μ
+## 3.In estimation problems, how to understand the word "state"?        
+State means several different things: and in the course they are mentioned like this:        
+1).ture state / acutal state      
+2).measured state / measurement       
+3).estimate state / estimation /belif      
+4).predicted state / predict / belif_bar / ~~bel~~          
+**In coding, for Kalman Filter how to represent the belif?**           
+Kalman Filter: belif is a Gaussian, just use mean and covariance.    
+**For the psu** 
+**Simplified procedure of Bayes Filter:**    
+State means several different 
+belif == estimation
+1). The very beginning is the belif of state in time step (t-1).
+    首先要知道t-1时刻的belif, belif就是你对drone所处的state的estimation。
+2). Receive measurement from 
+**Simplified procedure of Kalman Filter:**    
+1). From control predict next state.
+2). Receive measurement from 
+****    
+        
+        ****    
+        
